@@ -71,6 +71,8 @@ conn = pyodbc.connect('Driver={SQL Server};'
 cursor = conn.cursor()
 conn.autocommit = True
 
+#testing to see if it needs to be the full server name
+print('SQL1A')
 
 con = sqlalchemy.create_engine('mssql://32bjHFSQL1A/DbRaw?trusted_connection=yes&driver=ODBC+Driver+17+for+SQL+Server',fast_executemany=True)   
 
